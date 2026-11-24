@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOHAMED HAMRA :: Full-Stack Developer :: Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-bg': '#0f172a',
+                        'brand-card': '#1e293b',
+                        'brand-accent': '#2dd4bf',
+                        'brand-text-main': '#f1f5f9',
+                        'brand-text-muted': '#94a3b8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(45, 212, 191, 0.1), 0 4px 6px -4px rgba(45, 212, 191, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-brand-bg text-brand-text-main font-sans antialiased">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-brand-bg/80 backdrop-blur-sm border-b border-brand-card/50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <span class="text-xl font-bold tracking-tight text-brand-accent">MH</span>
+            <div class="flex items-center gap-6 text-sm">
+                <a href="#projects" class="text-brand-text-muted hover:text-brand-text-main transition">Projects</a>
+                <a href="#experience" class="text-brand-text-muted hover:text-brand-text-main transition">Experience</a>
+                <a href="#tech" class="text-brand-text-muted hover:text-brand-text-main transition">Technologies</a>
+                <a href="#about" class="text-brand-text-muted hover:text-brand-text-main transition">About</a>
+                <a href="#contact" class="text-brand-text-muted hover:text-brand-text-main transition">Contact</a>
+                <div class="flex items-center gap-4">
+                    <a href="https://www.linkedin.com/in/moha-hamra-dev/" target="_blank" class="px-4 py-1.5 border border-brand-accent text-brand-accent rounded-full text-xs font-bold hover:bg-brand-accent/10 transition">LinkedIn</a>
+                    <a href="https://github.com/Mohaaa7" target="_blank" class="px-4 py-1.5 border border-brand-accent text-brand-accent rounded-full text-xs font-bold hover:bg-brand-accent/10 transition">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 pt-32 pb-24 space-y-28">
+
+        <!-- HERO SECTION -->
+        <header class="w-full space-y-4">
+            <p class="text-xs font-mono text-brand-accent tracking-widest uppercase">>>> Personal Portfolio</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-brand-text-main">
+                Mohamed Hamra
+            </h1>
+            <h2 class="text-2xl md:text-3xl font-bold text-brand-accent">
+                Web Developer
+            </h2>
+            <p class="text-brand-text-muted text-lg leading-relaxed max-w-3xl pt-2">
+                Developer trained in Web Application Development, with hands-on experience building full-stack web applications.
+            </p>
+            <div class="flex gap-4 pt-4">
+                <a href="#contact" class="px-6 py-3 bg-brand-accent text-brand-bg rounded-xl text-sm font-semibold hover:opacity-90 transition">Let's talk</a>
+                <a href="#about" class="px-6 py-3 bg-brand-card border border-brand-card/50 text-brand-text-main rounded-xl text-sm font-semibold hover:border-brand-accent/50 transition">About me</a>
+            </div>
+        </header>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="scroll-mt-24 space-y-16">
+            <div class="space-y-3">
+                <p class="text-xs font-mono text-brand-accent tracking-widest uppercase">./featured</p>
+                <h3 class="text-4xl font-bold tracking-tight">Featured Project</h3>
+            </div>
+            
+            <div class="project-card bg-brand-card p-6 md:p-10 rounded-3xl border border-brand-card/50 grid md:grid-cols-12 gap-8 md:gap-12 transition duration-300">
+                <div class="md:col-span-5 relative group order-2 md:order-1">
+                    <img src="img/photo1.png" alt="ecommerce" class="rounded-xl">
+                    <!-- <div class="bg-brand-bg p-4 rounded-xl shadow-lg border border-brand-card aspect-video group-hover:border-brand-accent/30 transition">
+                        <div class="flex items-center gap-1.5 pb-3">
+                            <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                            <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                            <div class="w-3 h-3 bg-teal-500 rounded-full"></div>
+                        </div>
+                        <div class="space-y-1.5">
+                            <div class="h-2 bg-brand-card w-1/3 rounded"></div>
+                            <div class="h-6 bg-brand-accent/20 rounded"></div>
+                            <div class="grid grid-cols-2 gap-1.5 pt-2">
+                                <div class="h-4 bg-brand-card rounded"></div>
+                                <div class="h-4 bg-brand-card rounded"></div>
+                                <div class="h-4 bg-brand-card rounded"></div>
+                                <div class="h-4 bg-brand-card rounded"></div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="absolute -bottom-4 -right-4 text-xs font-mono bg-teal-950 text-teal-300 px-3 py-1.5 rounded-full border border-teal-800/50">Full-Stack e-Commerce</div>
+                </div>
+
+                <div class="md:col-span-7 space-y-6 order-1 md:order-2">
+                    <h4 class="text-3xl font-bold text-brand-text-main">Full-Stack E-Commerce Platform</h4>
+                    <p class="text-brand-text-muted leading-relaxed">
+                        Development of a robust SPA using Angular for the frontend and a RESTful API built with Laravel. Implemented authentication with Laravel Sanctum, role management, full CRUD functionality with dynamic real-time filters, mandatory email verification, and an advanced administration admin panel.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="text-xs font-semibold bg-brand-bg px-3 py-1 rounded-full text-brand-text-main border border-brand-card/50">Angular</span>                        
+                        <span class="text-xs font-semibold bg-brand-bg px-3 py-1 rounded-full text-brand-text-main border border-brand-card/50">Laravel</span>
+                        <span class="text-xs font-semibold bg-brand-bg px-3 py-1 rounded-full text-brand-text-main border border-brand-card/50">MySQL</span>
+                        <span class="text-xs font-semibold bg-brand-bg px-3 py-1 rounded-full text-brand-text-main border border-brand-card/50">Tailwind CSS</span>
+                    </div>
+                    <div class="flex gap-6 pt-4 items-center">
+                        <a href="https://github.com/Mohaaa7/ecommerce-project" target="_blank" class="text-sm font-semibold text-brand-accent hover:underline flex items-center gap-2">
+                            <span>View Full Code</span> →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="scroll-mt-24 space-y-12">
+            <div class="space-y-3">
+                <p class="text-xs font-mono text-brand-accent tracking-widest uppercase">./experience</p>
+                <h3 class="text-4xl font-bold tracking-tight">Professional Experience</h3>
+            </div>
+
+            <div class="space-y-8 border-l-2 border-brand-card pl-6 ml-2">
+                <div class="relative group">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-brand-accent border-4 border-brand-bg"></div>
+                    <div class="flex flex-wrap items-baseline justify-between gap-2">
+                        <h4 class="text-xl font-bold text-brand-text-main">Web Developer (Internship)</h4>
+                        <span class="text-xs font-mono text-brand-text-muted">EMC BCN (Barcelona) • Feb 2025 - Jun 2025</span>
+                    </div>
+                    <p class="text-brand-text-muted text-sm mt-2 leading-relaxed">
+                        Frontend development for a project management application using HTML5, Tailwind CSS, and JavaScript. Implementation of backend functionality and relational data management with PostgreSQL.
+                    </p>
+                </div>
+
+                <div class="relative group">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-brand-accent group-hover:bg-brand-accent border-4 border-brand-bg transition"></div>
+                    <div class="flex flex-wrap items-baseline justify-between gap-2">
+                        <h4 class="text-xl font-bold text-brand-text-main">Kitchen (International Experience)</h4>
+                        <span class="text-xs font-mono text-brand-text-muted">Cliff House Hotel (Ireland) • Jul 2026 - Present</span>
+                    </div>
+                    <p class="text-brand-text-muted text-sm mt-2 leading-relaxed">
+                        Professional experience in an international, multicultural, and English-speaking environment, strengthening autonomy, adaptability, and teamwork skills.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNOLOGIES -->
+        <section id="tech" class="scroll-mt-24 space-y-16">
+            <div class="space-y-3">
+                <p class="text-xs font-mono text-brand-accent tracking-widest uppercase">./stack</p>
+                <h3 class="text-4xl font-bold tracking-tight">Technologies</h3>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="group p-6 bg-brand-card rounded-2xl border border-brand-card/50 hover:border-brand-accent/50 transition">
+                    <div class="w-10 h-10 bg-brand-bg flex items-center justify-center rounded-lg group-hover:scale-110 transition text-brand-accent text-xl font-bold">A</div>
+                    <p class="text-xs font-mono text-brand-text-muted mt-5 uppercase">Frontend</p>
+                    <p class="text-lg font-bold mt-1 text-brand-text-main">Angular</p>
+                    <p class="text-md text-brand-text-muted mt-1">JavaScript, TypeScript, Tailwind, HTML, CSS</p>
+                </div>
+                <div class="group p-6 bg-brand-card rounded-2xl border border-brand-card/50 hover:border-brand-accent/50 transition">
+                    <div class="w-10 h-10 bg-brand-bg flex items-center justify-center rounded-lg group-hover:scale-110 transition text-brand-accent text-xl font-bold">L</div>
+                    <p class="text-xs font-mono text-brand-text-muted mt-5 uppercase">Backend</p>
+                    <p class="text-lg font-bold mt-1 text-brand-text-main">Laravel</p>
+                    <p class="text-md text-brand-text-muted mt-1">PHP, Node.js, Java, Python</p>
+                </div>
+                <div class="group p-6 bg-brand-card rounded-2xl border border-brand-card/50 hover:border-brand-accent/50 transition">
+                    <div class="w-10 h-10 bg-brand-bg flex items-center justify-center rounded-lg group-hover:scale-110 transition text-brand-accent text-xl font-bold">S</div>
+                    <p class="text-xs font-mono text-brand-text-muted mt-5 uppercase">Databases</p>
+                    <p class="text-lg font-bold mt-1 text-brand-text-main">MySQL</p>
+                    <p class="text-md text-brand-text-muted mt-1">PostgreSQL, MongoDB</p>
+                </div>
+                <div class="group p-6 bg-brand-card rounded-2xl border border-brand-card/50 hover:border-brand-accent/50 transition">
+                    <div class="w-10 h-10 bg-brand-bg flex items-center justify-center rounded-lg group-hover:scale-110 transition text-brand-accent text-xl font-bold">G</div>
+                    <p class="text-xs font-mono text-brand-text-muted mt-5 uppercase">Version Control</p>
+                    <p class="text-lg font-bold mt-1 text-brand-text-main">Git</p>
+                    <p class="text-md text-brand-text-muted mt-1">GitHub, GitLab</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME -->
+        <section id="about" class="scroll-mt-24 space-y-6">
+            <div class="space-y-3">
+                <p class="text-xs font-mono text-brand-accent tracking-widest uppercase">./about</p>
+                <h3 class="text-4xl font-bold tracking-tight">About Me</h3>
+            </div>
+            
+            <div class="bg-brand-card p-8 rounded-3xl border border-brand-card/50 space-y-4 text-brand-text-muted leading-relaxed">
+                <p>
+                    I am a web developer particularly interested in creating functional, well-structured applications with a strong focus on user experience.
+                </p>
+                <p>
+                    I have developed both frontend and backend functionality, working with REST APIs, authentication, and databases.
+                </p>
+                <p>
+                    In addition to my development experience, I have worked in different professional environments, including an international experience in Ireland. This has helped me develop autonomy, adaptability, and confidence working in English-speaking environments.
+                </p>
+                <p>
+                    I am currently looking for an opportunity as a web developer where I can contribute my skills, continue learning, and grow professionally while working on real-world projects.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="scroll-mt-24 space-y-6">
+            <div class="space-y-3">
+                <p class="text-xs font-mono text-brand-accent tracking-widest uppercase">./contact</p>
+                <h3 class="text-4xl font-bold tracking-tight">Contact</h3>
+            </div>
+
+            <div class="scroll-mt-24 p-10 md:p-16 bg-brand-card rounded-3xl border-2 border-dashed border-brand-card hover:border-brand-accent transition flex flex-col md:flex-row md:items-center justify-between gap-10">
+                <div class="space-y-4 max-w-xl">
+                    <p class="text-brand-text-muted leading-relaxed">
+                        Looking for a junior web developer to join your team? I am open to new opportunities and ready to contribute my skills to real-world projects while continuing to grow as a developer.
+                    </p>
+                </div>
+                <div class="flex-shrink-0 flex flex-col sm:flex-row gap-4">
+                    <a href="mailto:mohah3000@gmail.com" class="px-8 py-4 bg-brand-accent text-brand-bg rounded-xl text-md font-bold text-center hover:opacity-90 transition">
+                        mohah3000@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-brand-card/50 bg-brand-bg/50">
+        <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-brand-text-muted">
+            <p>&copy; 2026 Mohamed Hamra.</p>
+            <div class="flex gap-6">
+                <a href="https://www.linkedin.com/in/moha-hamra-dev/" target="_blank" class="hover:text-brand-accent transition">LinkedIn</a>
+                <a href="https://github.com/Mohaaa7" target="_blank" class="hover:text-brand-accent transition">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
